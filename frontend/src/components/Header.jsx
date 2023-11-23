@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
+
 const Header = (props) => {
   return (
     <header>
@@ -9,8 +10,22 @@ const Header = (props) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/cart"> Card</Nav.Link>
-              <Nav.Link href="/login">Sing In</Nav.Link>
+              <Nav.Link href="/cart">
+                {' '}
+                <i
+                  class="fa-solid fa-cart-shopping fa-beat"
+                  style={{ marginRight: '2px' }}
+                ></i>
+                Card
+              </Nav.Link>
+              <Nav.Link href="/login">
+                {' '}
+                <i
+                  class="fa-solid fa-right-to-bracket"
+                  style={{ marginRight: '2px' }}
+                ></i>
+                Sing In
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
